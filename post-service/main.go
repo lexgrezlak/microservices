@@ -4,15 +4,15 @@ import (
 	"context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	pb "instagram-microservices/src/post-service/pb"
 	"log"
+	pb "github.com/vnqx/microservices/post-service/pb"
 	"net"
 	"sync"
 )
 
 const (
 	port = ":3001"
-	pathToData = "data/posts.json"
+	pathToData = "data/post.json"
 )
 
 
