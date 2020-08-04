@@ -12,7 +12,9 @@ import (
 
 const (
 	port = ":3001"
+	pathToData = "data/posts.json"
 )
+
 
 type repository interface {
 	Create(*pb.Post) (*pb.Post, error)
