@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package post;
+
+service PostService {
+  rpc CreatePost(Post) returns (Response) {}
+}
+
+message Post {
+  string id = 1;
+  repeated string photos = 2;
+  string description = 3;
+}
+
+message Response {
+  bool created = 1;
+  Post post = 2;
+}
